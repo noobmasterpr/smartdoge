@@ -3,8 +3,19 @@ module.exports = {
     title: "Portfolio",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Inu",
+        short_name: "Inu",
+        start_url: "/",
+        display: "standalone",
+        icon: "src/images/Orange.png",
+      },
+    },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    "gatsby-plugin-transition-link",
+    "gatsby-plugin-sass",
   ],
 };

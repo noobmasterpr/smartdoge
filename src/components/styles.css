@@ -1,0 +1,184 @@
+#root {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #242424;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  right: 80px;
+  bottom: 0;
+  z-index: 3;
+  padding: 6px;
+  background: #242424;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  overflow: hidden;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #242424;
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.flex.mb-20.justify-between {
+  display: flex;
+}
+.swiper-pagination.swiper-pagination-fraction {
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+span.swiper-pagination-current {
+  position: relative;
+  display: block;
+}
+
+span.swiper-pagination-total {
+  float: left;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.swiper-pagination.swiper-pagination-fraction {
+  position: absolute;
+  bottom: 150px;
+  right: -55px;
+  z-index: 20;
+  color: #fff;
+  padding: 20px 0;
+  width: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.info {
+  position: absolute;
+  top: 45%;
+  left: 0px;
+  right: 0px;
+  z-index: 3;
+  margin-top: 40px;
+  padding: 0px 70px;
+  transition: all 0.3s linear 1s;
+  color: white;
+  text-align: left;
+}
+
+.title {
+  font-size: 14px;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 70px;
+  width: 60px;
+  height: 1px;
+  top: 0px;
+  background: #be590e;
+}
+
+.firstPoint {
+  position: absolute;
+  bottom: 24px;
+  width: 6px;
+  align-content: center;
+  left: 31.8rem;
+  height: 6px;
+  margin-left: -3px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #ff4137, #fdc800);
+}
+
+.secondPoint {
+  position: absolute;
+  bottom: 24px;
+  width: 6px;
+  align-content: center;
+  right: 31.6rem;
+  height: 6px;
+  margin-left: -3px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #ff4137, #fdc800);
+}
+
+.swiper-slide.swiper-slide-active .overlay {
+  background: linear-gradient(to right, #ff4137, #fdc800);
+  z-index: 2;
+}
+
+.linksCenter {
+  float: left;
+  position: relative;
+  line-height: 50px;
+  display: flex;
+  list-style: none;
+  padding-inline-start: 10px;
+}
+
+.linksMain {
+  padding-left: 0.5rem;
+  padding-right: 3rem;
+}
+
+.titleText {
+  font-size: 35px;
+  letter-spacing: 0.1rem;
+}
+
+.paraText {
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+}
