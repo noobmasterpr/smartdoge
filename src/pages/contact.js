@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Layout from "../components/Layout";
 import gsap from "gsap";
 import styled from "styled-components";
-import logo from "../images/orange.png";
+import logo from "../images/Orange.png";
 
 const Wrapper = styled.div`
   position: fixed;

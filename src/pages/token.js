@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import gsap from "gsap";
 import styled from "styled-components";
 import { FaEthereum } from "react-icons/fa";
-import logo from "../images/orange.png";
+import logo from "../images/Orange.png";
 
 const Wrapper = styled.div`
   position: fixed;
