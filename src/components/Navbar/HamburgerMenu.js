@@ -30,13 +30,6 @@ const HamburgerMenuContainer = styled.div`
   }
 `;
 
-const HamburgerIcon = styled.div`
-  color: $(({reverseColor}) => reserveColor ? "#2b3942": "#fff");
-  cursor: pointer;
-  z-index: 99;
-  transition: all 250ms ease-in-out;
-`;
-
 const MenuContainer = styled(motion.div)`
   min-width: 300px;
   width: 30.8%;

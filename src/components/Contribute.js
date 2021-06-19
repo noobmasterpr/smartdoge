@@ -10,9 +10,6 @@ const Wrapper = styled.div`
     margin-bottom: 80px;
     margin-top: 20px;
     padding: 20px;
-    @media (max-width: 500px) {
-      width: 300px !important;
-    }
   }
 
   input.inp {
@@ -182,13 +179,17 @@ const Wrapper = styled.div`
     padding-right: 2rem;
   }
 
+  @media screen and (max-width: 800px) {
+    .headerTime {
+      font-size: 40px !important;
+    }
+    .titleTokenSale {
+      font-size: 35px !important;
+    }
+  }
   @media (max-width: 500px) {
     .jvCTkj .contributeContainer {
       width: 300px;
-    }
-
-    .headerTime {
-      font-size: 60px !important;
     }
 
     .buyCoins {
@@ -236,37 +237,37 @@ class ContributeBox extends Component {
   render() {
     return (
       <Wrapper id="contribute" className="fold-right">
-        <div class=" contributeContainer">
-          <div class="tokenSaleRightSide">
-            <div class="titleTokenSale">TOKEN SALE LIVE IN</div>
-            <div class="time flex space-around">
+        <div className=" contributeContainer">
+          <div className="tokenSaleRightSide">
+            <div className="titleTokenSale">TOKEN SALE LIVE IN</div>
+            <div className="time flex space-around">
               <div>
-                <div class="headerTime">20</div>
+                <div className="headerTime">20</div>
                 <div>Days</div>
               </div>
               <div className="dateTwo">
-                <div class="headerTime">10</div>
+                <div className="headerTime">10</div>
                 <div>Hours</div>
               </div>
               <div className="dateThree">
-                <div class="headerTime">23</div>
+                <div className="headerTime">23</div>
                 <div>Min</div>
               </div>
               <div>
-                <div class="headerTime">23</div>
+                <div className="headerTime">23</div>
                 <div>Sec</div>
               </div>
             </div>
           </div>
 
           <form>
-            <div class="buyCoins">
-              <div class="amountToBuy">Amount of ether to buy:</div>
+            <div className="buyCoins">
+              <div className="amountToBuy">Amount of ether to buy:</div>
               <input className="inp"></input>
               <div> ≈ {100 * 125} Inu </div>
-              <div class="etherDC"> (1 BNB ≈ 100 + 25 (Bonus) AP) </div>
+              <div className="etherDC"> (1 BNB ≈ 100 + 25 (Bonus) AP) </div>
             </div>
-            <div class="buttonBuy">
+            <div className="buttonBuy">
               <button className="sale">Buy Now</button>
             </div>
           </form>

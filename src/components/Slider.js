@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -35,6 +34,20 @@ export default function Slider() {
   return (
     <div className="wrapper">
       <Swiper
+        breakpoints={{
+          720: {
+            slidesPerView: 3,
+            spaceBetween: 6,
+          },
+          540: {
+            slidesPerView: 2,
+            spaceBetween: 4,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 2,
+          },
+        }}
         effect={"coverflow"}
         slidesPerView={"auto"}
         centeredSlides={true}
@@ -49,7 +62,6 @@ export default function Slider() {
           modifier: 1,
           slideShadows: true,
         }}
-        slidesPerView={3}
         spaceBetween={6}
         navigation={true}
         mousewheel={true}
@@ -63,6 +75,7 @@ export default function Slider() {
           <img
             src="https://media.giphy.com/media/YRW7L5BUVsRIzjemDS/giphy.gif"
             className="swiper-lazy"
+            alt="slider smartdoge"
           />
           <div className="info">
             <h2 className="titleText">Smartdoge Finance</h2>
@@ -77,6 +90,7 @@ export default function Slider() {
           <img
             src="https://media.giphy.com/media/xTiTnL4rWDgEdLRzby/giphy.gif"
             className="swiper-lazy"
+            alt="slider smartdoge"
           />
           <div className="info">
             <h2 className="titleText">Decentralized Token</h2>
@@ -91,6 +105,7 @@ export default function Slider() {
           <img
             src="https://media.giphy.com/media/j3n4Ol8p8SwnC5GIBB/giphy-downsized.gif"
             className="swiper-lazy"
+            alt="slider smartdoge"
           />
           <div className="info">
             <h2 className="titleText">New Smart Chain</h2>
@@ -105,6 +120,7 @@ export default function Slider() {
           <img
             src="https://media.giphy.com/media/lRvqfh7DjfjLi3OwJd/giphy.gif"
             className="swiper-lazy"
+            alt="slider smartdoge"
           />
           <div className="info">
             <h2 className="titleText">Buy Smartdoge</h2>
@@ -119,6 +135,7 @@ export default function Slider() {
           <img
             src="https://media.giphy.com/media/je1tdCuUWbzd2WrXyU/giphy-downsized.gif"
             className="swiper-lazy"
+            alt="slider smartdoge"
           />
           <div className="info">
             <h2 className="titleText">New on PancakeSwap</h2>

@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import Layout from "../components/Layout";
 import gsap from "gsap";
 import styled from "styled-components";
-import { FaEthereum } from "react-icons/fa";
 import logo from "../images/orange.png";
 
 const Wrapper = styled.div`
@@ -246,11 +245,11 @@ const Token = ({ transitionStatus }) => {
 
                 <div className="progress">
                   <form>
-                    <label className="det" for="fname">
+                    <label className="det" for="fname" htmlFor="checkbox-1">
                       First name:
                     </label>
                     <input className="bgProgess"></input>
-                    <label className="det" for="lname">
+                    <label className="det" for="lname" htmlFor="checkbox-2">
                       Last name:
                     </label>
                     <input className="bgProgess"></input>

@@ -23,6 +23,18 @@ const Wrapper = styled.div`
   width: 100%;
   top: 10rem;
 
+  @media screen and (max-width: 800px) {
+    left: 0 !important;
+    right: 0 !important;
+    width: auto !important;
+    top: auto !important;
+
+    ul.tab-header {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+  }
+
   h1 {
     font-size: 2.25rem;
     color: #fff;

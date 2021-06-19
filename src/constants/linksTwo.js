@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import { GrDown } from "react-icons/gr";
 import styled from "styled-components";
 
 const Wrapper = styled.div`

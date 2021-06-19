@@ -11,9 +11,13 @@ const Wrapper = styled.div`
   right: 0;
   bottom: 150px;
   width: 80px;
+
+  @media screen and (max-width: 800px) {
+    display: none !important;
+  }
 `;
 
-const BG = styled.div`
+const Background = styled.div`
   background: #313131;
   position: fixed;
   top: 80px;
@@ -42,11 +46,11 @@ const SidebarRight = () => {
     <>
       <HamburgerMenu />
       <Wrapper>
-        <BG>
+        <Background>
           <Mouse>
             <div className="scroller" />
           </Mouse>
-        </BG>
+        </Background>
       </Wrapper>
     </>
   );

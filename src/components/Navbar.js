@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import logo from "../images/orange.png";
 import "./styles.scss";
-
-import { Link } from "gatsby";
 import { Menu } from "./Menu";
 
 const Wrapper = styled.nav`
@@ -56,6 +54,12 @@ const RightBar = styled.div`
     color: #fff;
     letter-spacing: 4px;
 
+    @media screen and (max-width: 800px) {
+      .userBox {
+        right: 30px !important;
+      }
+    }
+
     :before {
       content: "";
       position: absolute;
@@ -85,6 +89,11 @@ const FullWidth = styled.div`
     right: 40px;
     background: rgba(255, 255, 255, 0.2);
     z-index: 2;
+  }
+  @media screen and (max-width: 800px) {
+    :after {
+      display: none;
+    }
   }
 `;
 

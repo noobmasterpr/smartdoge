@@ -21,6 +21,30 @@ const Wrapper = styled.div`
   width: 100%;
   top 8rem;
 
+  @media screen and (max-width: 800px) {
+      left: 0 !important;
+      right: 0 !important;
+      width: auto !important;
+      img {
+        display: none !important;
+      }
+
+      .otherHalf {
+        display: none !important;
+      }
+
+      .half {
+        flex: unset !important;
+        max-width: unset !important;
+      }
+
+      h1 {
+        font-size: 2rem !important;
+        width: 100% !important;
+      
+      }
+  }
+
   .half {
     flex: 0 0 66.66667%;
     max-width: 66.66667%;
@@ -141,6 +165,8 @@ const Wrapper = styled.div`
     letter-spacing: 0.1rem;
     padding-bottom: 4rem;
   }
+
+
 `;
 
 const Token = ({ transitionStatus }) => {

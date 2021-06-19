@@ -43,7 +43,7 @@ const Tabs = (props) => {
       <div className="tab-content">
         {Object.keys(childContent).map((key) => {
           if (key === active) {
-            return <div class="tab-child">{childContent[key]}</div>;
+            return <div className="tab-child">{childContent[key]}</div>;
           } else {
             return null;
           }

@@ -329,3 +329,17 @@ ul.tab-header {
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 800px) {
+  .flex.mb-20.justify-between {
+    display: none !important;
+  }
+  .userBox {
+    right: 0px !important;
+    letter-spacing: 0 !important;
+  }
+
+  .Navbar__RightBar-igXtxG.hrakkx {
+    width: 50% !important;
+  }
+}

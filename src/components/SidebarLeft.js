@@ -18,6 +18,10 @@ const Wrapper = styled.div`
   width: 80px;
   -webkit-transform: translate3d(0, 0, 0);
 
+  @media screen and (max-width: 800px) {
+    display: none !important;
+  }
+
   :before {
     content: "";
     position: absolute;
@@ -71,6 +75,9 @@ const ShareBtn = styled.div`
     color: #fff;
     line-height: 28px;
     cursor: pointer;
+  }
+  @media screen and (max-width: 800px) {
+    display: none !important;
   }
 `;
 
