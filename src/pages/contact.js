@@ -270,13 +270,6 @@ const Token = ({ transitionStatus }) => {
                     Submit
                   </a>
                 </div>
-
-                <div
-                  ref={(el) => (textRefs.current[4] = el)}
-                  className="payment"
-                >
-                  Don't worry we don't spam
-                </div>
               </div>
             </div>
           </div>
