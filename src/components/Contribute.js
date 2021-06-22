@@ -184,7 +184,11 @@ const Wrapper = styled.div`
       font-size: 40px !important;
     }
     .titleTokenSale {
-      font-size: 35px !important;
+      font-size: 1rem !important;
+    }
+    .time.flex.space-around {
+      padding-top: 1rem !important;
+      padding-bottom: 3rem !important;
     }
   }
   @media (max-width: 500px) {

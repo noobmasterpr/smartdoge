@@ -171,6 +171,7 @@ const Wrapper = styled.div`
 
 h1 {
   width: 100% !important;
+  font-size: 1rem !important;
 }
 .bgProgess {
   width: 100% !important;

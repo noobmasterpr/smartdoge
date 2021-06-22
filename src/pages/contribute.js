@@ -27,11 +27,16 @@ const Wrapper = styled.div`
     left: 0 !important;
     right: 0 !important;
     width: auto !important;
-    top: auto !important;
+    top: 6rem !important;
 
     ul.tab-header {
       grid-template-columns: 1fr 1fr;
       justify-items: center;
+    }
+    .tabsSingle {
+      width: 100% !important;
+      padding-top: 15px !important;
+      padding-bottom: 15px !important;
     }
   }
 

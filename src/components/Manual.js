@@ -10,9 +10,6 @@ const Wrapper = styled.div`
     margin-bottom: 80px;
     margin-top: 20px;
     padding: 20px;
-    @media (max-width: 500px) {
-      width: 300px !important;
-    }
   }
 
   input.inp {
@@ -183,12 +180,8 @@ const Wrapper = styled.div`
   }
 
   @media (max-width: 500px) {
-    .jvCTkj .contributeContainer {
-      width: 300px;
-    }
-
     .headerTime {
-      font-size: 60px !important;
+      font-size: 40px !important;
     }
 
     .buyCoins {
@@ -229,6 +222,20 @@ const Wrapper = styled.div`
     text-align: center;
     cursor: pointer;
     list-style: none;
+  }
+
+  @media screen and (max-width: 800px) {
+    .titleTokenSale {
+      font-size: 1rem !important;
+    }
+    p.amountToBuy {
+      font-size: 12px !important;
+      text-align: center !important;
+    }
+    .time.flex.space-around {
+      padding-top: 1rem !important;
+      padding-bottom: 3rem !important;
+    }
   }
 `;
 
