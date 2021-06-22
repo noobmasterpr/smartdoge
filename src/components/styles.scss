@@ -218,6 +218,7 @@ ul.tab-header {
 .swiper-button-next {
   position: absolute;
   top: 50%;
+  z-index: 999 !important;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
   margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
@@ -268,6 +269,7 @@ ul.tab-header {
   &:after {
     content: "next";
   }
+  z-index: 999 !important;
   right: 10px;
   left: auto;
   position: absolute;

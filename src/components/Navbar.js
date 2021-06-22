@@ -103,13 +103,15 @@ const Navbar = () => {
       <Wrapper>
         <ul className="linksCenter">
           <li>
-            <img
-              src={logo}
-              alt="logo"
-              height="50"
-              width="60"
-              className="logo"
-            />
+            <a href="/">
+              <img
+                src={logo}
+                alt="logo"
+                height="50"
+                width="60"
+                className="logo"
+              />
+            </a>
           </li>
           <Menu />
         </ul>

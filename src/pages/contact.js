@@ -161,6 +161,17 @@ const Wrapper = styled.div`
     font-size: 14px;
     letter-spacing: 0.1rem;
 }
+@media screen and (max-width: 800px) {
+  top: 100px !important;
+
+  left: 0px !important;
+  .otherHalf {
+    display: none !important;
+}
+.row {
+  margin-left: 0rem !important;
+}
+}
 `;
 
 const Token = ({ transitionStatus }) => {
