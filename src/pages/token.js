@@ -304,13 +304,13 @@ const Token = ({ transitionStatus }) => {
                   ref={(el) => (textRefs.current[1] = el)}
                   className="tokenText"
                 >
-                  Total Supply: 1 Quadrillion $SD 8% Private sale 30% for the
+                  Total Supply: 1 Quadrillion $SD. 8% Private sale. 30% for the
                   Presale. 5% Liquidity 5.2% for the foundation: Team only gets
                   0.8%, and 1% for marketing. $SD is a fork of $MNRY, $MNRY is a
                   fork of $SAFEMOON. 2% of the foundation will be buying $MNRY
                   and $SAFEMOON for their amazing works and put the tokens to
                   the prize pool as added rewards. 45% burn. The first week we
-                  will burn 10% and the weeks after 1% each week
+                  will burn 10% and the weeks after 1% each week.
                 </p>
 
                 <div
