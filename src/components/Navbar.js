@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../images/Orange.png";
+import logo from "../images/smartdoge1.png";
 import "./styles.scss";
 import { Menu } from "./Menu";
 
