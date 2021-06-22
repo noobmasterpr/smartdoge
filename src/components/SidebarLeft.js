@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  FaFacebookF,
-  FaMediumM,
-  FaTwitter,
-  FaTelegramPlane,
-} from "react-icons/fa";
-import { HiPlusCircle } from "react-icons/hi";
+import { FaTwitter, FaTelegramPlane } from "react-icons/fa";
 
 const Wrapper = styled.div`
   background: #313131;

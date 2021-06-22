@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import Layout from "../components/Layout";
 import gsap from "gsap";
 import styled from "styled-components";
-import { FaEthereum } from "react-icons/fa";
 import logo from "../images/smartdoge2.png";
 
 const Wrapper = styled.div`
@@ -308,7 +307,7 @@ const Token = ({ transitionStatus }) => {
                   Unlike the $DOGE, We have a purpose to be on blockchain that’s
                   how $SD SMART DOGE stands out. SMART DOGE FINANCE is a
                   community-driven, no-loss prize game and no-loss pool
-                  launchpad built on Binance Smart Chain #BSC.
+                  launchpad built on Binance Smart Chain.
                 </p>
 
                 <div

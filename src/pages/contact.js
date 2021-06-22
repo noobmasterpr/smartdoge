@@ -168,8 +168,23 @@ const Wrapper = styled.div`
   .otherHalf {
     display: none !important;
 }
-.row {
-  margin-left: 0rem !important;
+
+h1 {
+  width: 100% !important;
+}
+.bgProgess {
+  width: 100% !important;
+}
+.bgProgesstwo {
+  width: 100% !important;
+}
+.progress {
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+}
+.half {
+  max-width: 100% !important;
 }
 }
 `;
