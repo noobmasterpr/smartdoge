@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import gsap from "gsap";
 import styled from "styled-components";
 import { FaEthereum } from "react-icons/fa";
-import logo from "../images/Orange.png";
+import logo from "../images/smartdoge2.png";
 
 const Wrapper = styled.div`
   position: fixed;
@@ -24,6 +24,7 @@ const Wrapper = styled.div`
   @media screen and (max-width: 800px) {
       left: 0 !important;
       right: 0 !important;
+      top: 10 !important;
       width: auto !important;
       img {
         display: none !important;
@@ -39,9 +40,27 @@ const Wrapper = styled.div`
       }
 
       h1 {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
         width: 100% !important;
+        margin-top: 0 !important;
       
+      }
+
+      .roadmap {
+        padding-left: 1.5rem !important;
+      }
+
+      .airdrop {
+        :after {
+          left: 3rem !important;
+        }
+      }
+    
+      .presale {
+        padding-left: 1rem !important;
+        :after {
+          right: 8.5rem !important;
+        }
       }
   }
 
@@ -70,14 +89,14 @@ const Wrapper = styled.div`
 
   .imageRight {
     position: absolute;
-    left: -7rem;
-    top: 3.5rem;
+    left: -5rem;
+    top: 2rem;
 }
 
   h1 {
     font-size: 2.25rem;
     color: #fff;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
     font-family: inherit;
     font-weight: 700;
     line-height: 1.5;
@@ -99,7 +118,7 @@ const Wrapper = styled.div`
     overflow: initial;
   }
   .progess {
-    width: 82%;
+    width: 50%;
     flex-direction: column;
     -webkit-box-pack: center;
     justify-content: center;
@@ -126,16 +145,7 @@ const Wrapper = styled.div`
     text-decoration: unset;
   }
 
-  .payment {
-    padding-top: 2rem;
-    color: #fff;
-    display: flex;
-    align-items: center;
 
-    svg {
-      padding-right: 5px;
-    }
-  }
 
   .progressBtn{
     position: absolute;
@@ -148,15 +158,7 @@ const Wrapper = styled.div`
     padding: 0 1rem;
   }
 
-  .progressB {
-    display: block;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
-    -moz-box-flex: 0;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    font-size: 14px;
-  }
+ 
 
   .textP {
     color: #fff;
@@ -166,7 +168,50 @@ const Wrapper = styled.div`
     padding-bottom: 4rem;
   }
 
+  .tokenText {
+    color: white;
+    padding-bottom: 2.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: unset;
+    line-height: 1.5rem;
+  }
 
+
+  .roadmap {
+    display: flex;
+    padding-bottom: 2rem;
+    padding-left: 5rem;
+  }
+  .airdrop {
+    color: white;
+    list-style: none;
+    letter-spacing: 0.1rem;
+    :after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 20px;
+      top: 1.3rem;
+      left: 6.6rem;
+      background: #fff;
+    }
+  }
+
+  .presale {
+    color: white;
+    list-style: none;
+    letter-spacing: 0.1rem;
+    padding-left: 5rem;
+    :after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 20px;
+      top: 1.3rem;
+      background: #fff;
+      right: 19rem;
+    }
+  }
 `;
 
 const Token = ({ transitionStatus }) => {
@@ -249,37 +294,43 @@ const Token = ({ transitionStatus }) => {
                   ref={(el) => (textRefs.current[0] = el)}
                   className="list-none text-6xl md:text-6xl lg:text-8xl font-bold relative overflow-hidden uppercase transform phrase"
                 >
-                  Join the Smartdoge Finance community today
+                  SMART DOGE – THE DOGE WITH A PURPOSE
                 </h1>
 
-                <div className="progress">
-                  <div
-                    ref={(el) => (textRefs.current[1] = el)}
-                    className="bgProgess"
-                  >
+                <p
+                  ref={(el) => (textRefs.current[1] = el)}
+                  className="tokenText"
+                >
+                  Unlike the $DOGE, We have a purpose to be on blockchain that’s
+                  how $SD SMART DOGE stands out. SMART DOGE FINANCE is a
+                  community-driven, no-loss prize game and no-loss pool
+                  launchpad built on Binance Smart Chain #BSC.
+                </p>
+
+                <div
+                  className="progress"
+                  ref={(el) => (textRefs.current[2] = el)}
+                >
+                  <div className="roadmap">
+                    <li className="airdrop">Airdrop</li>
+                    <li className="presale">Pre-Sale</li>
+                  </div>
+
+                  <div className="bgProgess">
                     <div className="progess"></div>
-                    <div className="progressBtn">
-                      <div className="progressB">PRESALE NOT LIVE YET</div>
-                    </div>
+                    <div className="progressBtn"></div>
                   </div>
                 </div>
 
                 <div ref={(el) => (textRefs.current[3] = el)}>
-                  <a href="/" className="btn">
+                  <a href="https://t.me/smartdoge_official" className="btn">
                     Join now
                   </a>
-                </div>
-
-                <div
-                  ref={(el) => (textRefs.current[4] = el)}
-                  className="payment"
-                >
-                  <FaEthereum size={25} /> <p>Ethereum & BNB</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="otherHalf" ref={(el) => (textRefs.current[2] = el)}>
+          <div className="otherHalf" ref={(el) => (textRefs.current[4] = el)}>
             <div className="imageRight">
               <img
                 src={logo}

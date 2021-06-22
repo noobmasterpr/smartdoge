@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   top: 80px;
   left: 0;
   bottom: 150px;
-  z-index: -1;
+  z-index: 999;
   width: 80px;
   -webkit-transform: translate3d(0, 0, 0);
 
@@ -105,7 +105,7 @@ const SpanPointTwo = styled.span`
 
 const SocialShare = styled.div`
   position: absolute;
-  bottom: 160px;
+  bottom: 190px;
   left: 50%;
   margin-left: -22px;
   width: 40px;
@@ -144,7 +144,8 @@ const Link = styled.a`
   display: block;
   text-align: center;
   color: #767676;
-  transition: all 200ms ease-out;
+  cursor: pointer;
+  z-index: 99999 !important;
 `;
 
 const Start = styled.aside``;
@@ -157,22 +158,12 @@ const SidebarLeft = () => {
         <SocialShare>
           <SocialList>
             <SocialLink>
-              <Link href="/google">
-                <FaFacebookF />
-              </Link>
-            </SocialLink>
-            <SocialLink>
-              <Link href="/google">
-                <FaMediumM />
-              </Link>
-            </SocialLink>
-            <SocialLink>
-              <Link href="/google">
+              <Link href="https://twitter.com/SmartdogeF">
                 <FaTwitter />
               </Link>
             </SocialLink>
             <SocialLink>
-              <Link href="/google">
+              <Link href="https://t.me/smartdoge_official">
                 <FaTelegramPlane />
               </Link>
             </SocialLink>
@@ -181,10 +172,7 @@ const SidebarLeft = () => {
         <SpanPointTwo></SpanPointTwo>
       </Wrapper>
       <ShareBtn>
-        <span>
-          Share
-          <HiPlusCircle size={25} color="#fff" />
-        </span>
+        <span></span>
       </ShareBtn>
     </Start>
   );
