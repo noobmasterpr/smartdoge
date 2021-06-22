@@ -100,10 +100,10 @@ export default function Slider() {
         <SwiperSlide>
           <img src={Image4} className="swiper-lazy" alt="slider smartdoge" />
           <div className="info">
-            <h2 className="titleText">Buy Smartdoge</h2>
+            <h2 className="titleText">JOIN US! WHILE IT’S EARLY !</h2>
             <p className="paraText">
-              Buy $SF tokens from PancakeSwap in minutes! Join the Telegram if
-              you need help or have any questions!
+              $SD stands out from the crowd as more than a crypto novelty, but
+              as an ambition to connect a community that shares the same values.
             </p>
           </div>
           <div className="overlay"></div>
@@ -111,10 +111,10 @@ export default function Slider() {
         <SwiperSlide>
           <img src={Image5} className="swiper-lazy" alt="slider smartdoge" />
           <div className="info">
-            <h2 className="titleText">New on PancakeSwap</h2>
+            <h2 className="titleText">DOGE WITH A PURPOSE</h2>
             <p className="paraText">
-              Total supply was tied to BNB on PancakeSwap, and growing each
-              week.
+              Smart Doge Finance is a community-driven, no-loss prize game and
+              no-loss pool launchpad built on Binance Smart Chain.
             </p>
           </div>
           <div className="overlay"></div>
