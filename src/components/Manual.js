@@ -233,8 +233,10 @@ const Wrapper = styled.div`
       text-align: center !important;
     }
     .time.flex.space-around {
-      padding-top: 1rem !important;
-      padding-bottom: 3rem !important;
+      display: none !important;
+    }
+    .titleTokenSale {
+      display: none !important;
     }
   }
 `;

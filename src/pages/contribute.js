@@ -37,6 +37,8 @@ const Wrapper = styled.div`
       width: 100% !important;
       padding-top: 15px !important;
       padding-bottom: 15px !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
     }
   }
 
