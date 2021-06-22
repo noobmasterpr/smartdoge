@@ -190,7 +190,14 @@ const Wrapper = styled.div`
       padding-top: 1rem !important;
       padding-bottom: 3rem !important;
     }
+    .time.flex.space-around {
+      display: none !important;
+    }
+    .titleTokenSale {
+      display: none !important;
+    }
   }
+
   @media (max-width: 500px) {
     .jvCTkj .contributeContainer {
       width: 300px;
@@ -266,10 +273,10 @@ class ContributeBox extends Component {
 
           <form>
             <div className="buyCoins">
-              <div className="amountToBuy">Amount of ether to buy:</div>
+              <div className="amountToBuy">Amount of BNB to buy:</div>
               <input className="inp"></input>
-              <div> ≈ {100 * 125} Inu </div>
-              <div className="etherDC"> (1 BNB ≈ 100 + 25 (Bonus) AP) </div>
+              <div> ≈ {100 * 125} Smart Doge </div>
+              <div className="etherDC"> (1 BNB ≈ 100 + 25 (Bonus) $SD) </div>
             </div>
             <div className="buttonBuy">
               <button className="sale">Buy Now</button>

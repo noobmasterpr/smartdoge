@@ -270,10 +270,10 @@ class ContributeBox extends Component {
 
           <form>
             <div class="buyCoins">
-              <div class="amountToBuy">Amount of ether to buy:</div>
+              <div class="amountToBuy">Amount of BNB to buy:</div>
               <input className="inp"></input>
-              <div> ≈ {100 * 125} Inu </div>
-              <div class="etherDC"> (1 BNB ≈ 100 + 25 (Bonus) AP) </div>
+              <div> ≈ {100 * 125} Smart Doge </div>
+              <div class="etherDC"> (1 BNB ≈ 100 + 25 (Bonus) $SD) </div>
             </div>
             <div class="buttonBuy">
               <p className="amountToBuy">
