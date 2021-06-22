@@ -40,11 +40,15 @@ const Wrapper = styled.div`
       }
 
       h1 {
-        font-size: 1.5rem !important;
+        font-size: 1rem !important;
         width: 100% !important;
         margin-top: 0 !important;
-      
+        margin-bottom: 0 !important;      
       }
+
+      p.tokenText {
+        margin-bottom: 0 !important;
+    }
 
       .roadmap {
         padding-left: 1.5rem !important;
