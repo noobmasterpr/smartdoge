@@ -24,6 +24,12 @@ const Wrapper = styled.nav`
     background: rgba(255, 255, 255, 0.05);
   }
 
+  @media screen and (max-width: 800px) {
+    :before {
+      display: none !important;
+    }
+  }
+
   .navLinks {
     color: #fff;
     font-size: 12px;
@@ -42,6 +48,9 @@ const RightBar = styled.div`
   z-index: 20;
   background: linear-gradient(to right, #ff4137, #fdc800);
 
+  @media screen and (max-width: 800px) {
+    width: 60% !important;
+  }
   .userBox {
     position: absolute;
     top: 25px;
